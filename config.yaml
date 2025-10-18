@@ -1,0 +1,34 @@
+# Model settings
+model:
+  name: "all-MiniLM-L6-v2"
+  similarity_threshold: 0.3
+  max_suggestions: 5
+
+# Graph settings
+graph:
+  layout_seed: 42
+  layout_iterations: 50
+  spring_k: 2
+  spring_scale: 10
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# UI Settings
+ui:
+  page_title: "SkillGraph"
+  layout: "wide"
+  theme: "light"
+
+# Performance
+performance:
+  cache_embeddings: true
+  max_graph_nodes: 500
+  max_suggestions: 5
+
+# Job roles file
+data:
+  job_roles_path: "job_roles.json"
+  skill_database_path: "skill_extractor.py"  # Embedded in code

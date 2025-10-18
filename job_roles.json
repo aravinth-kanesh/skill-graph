@@ -1,0 +1,89 @@
+{
+  "Backend Developer": [
+    "Python", "Flask", "Django", "FastAPI", "REST APIs",
+    "SQL", "PostgreSQL", "Docker", "Git",
+    "Microservices", "System Design"
+  ],
+  "Frontend Developer": [
+    "React", "JavaScript", "TypeScript", "HTML", "CSS",
+    "Tailwind", "Next.js", "Git", "REST APIs"
+  ],
+  "Full Stack Developer": [
+    "Python", "JavaScript", "React", "Django", "Flask",
+    "PostgreSQL", "SQL", "Docker", "Git",
+    "REST APIs", "HTML", "CSS"
+  ],
+  "Data Scientist": [
+    "Python", "Pandas", "NumPy", "Scikit-learn",
+    "Machine Learning", "Statistics", "SQL",
+    "TensorFlow", "PyTorch", "Data Analysis"
+  ],
+  "Data Engineer": [
+    "Python", "SQL", "Pandas", "Docker",
+    "Kubernetes", "AWS", "Databases", "Spark",
+    "ETL", "Data Warehousing"
+  ],
+  "DevOps Engineer": [
+    "Docker", "Kubernetes", "Linux", "Git",
+    "CI/CD", "AWS", "Terraform", "Jenkins",
+    "System Design", "Monitoring"
+  ],
+  "Cloud Architect": [
+    "AWS", "Azure", "GCP", "System Design",
+    "Docker", "Kubernetes", "CI/CD",
+    "Security", "Scalability", "Microservices"
+  ],
+  "Machine Learning Engineer": [
+    "Python", "TensorFlow", "PyTorch", "Scikit-learn",
+    "Machine Learning", "Deep Learning", "SQL",
+    "Data Analysis", "Statistics", "System Design"
+  ],
+  "Software Engineer (Quant)": [
+    "Python", "C++", "Java", "System Design",
+    "Algorithms", "Data Structures", "SQL",
+    "Statistics", "SOLID", "Design Patterns"
+  ],
+  "Solutions Architect": [
+    "System Design", "AWS", "Azure", "Microservices",
+    "Docker", "Python", "Java", "SQL",
+    "Communication", "SOLID"
+  ],
+  "Mobile Developer (iOS)": [
+    "Swift", "Objective-C", "iOS", "REST APIs",
+    "Git", "Design Patterns", "Unit Testing"
+  ],
+  "Mobile Developer (Android)": [
+    "Kotlin", "Java", "Android", "REST APIs",
+    "Git", "Design Patterns", "Unit Testing"
+  ],
+  "Security Engineer": [
+    "Linux", "Python", "System Design",
+    "Networking", "Cryptography", "SQL",
+    "Docker", "Git", "Cloud Security"
+  ],
+  "Site Reliability Engineer": [
+    "Linux", "Python", "Docker", "Kubernetes",
+    "CI/CD", "Monitoring", "Terraform",
+    "System Design", "AWS", "Git"
+  ],
+  "QA Engineer": [
+    "Python", "Automation", "SQL", "Git",
+    "Test Frameworks", "Linux", "REST APIs",
+    "System Design", "Communication"
+  ],
+  "Product Engineer": [
+    "JavaScript", "React", "Python", "SQL",
+    "System Design", "REST APIs", "Git",
+    "A/B Testing", "Analytics", "Communication"
+  ],
+  "Research Scientist": [
+    "Python", "TensorFlow", "PyTorch", "Machine Learning",
+    "Statistics", "Research", "Published Work",
+    "Data Analysis", "Algorithms", "Deep Learning"
+  ],
+  "AI/LLM Engineer": [
+    "Python", "PyTorch", "TensorFlow", "Machine Learning",
+    "Deep Learning", "NLP", "Transformers",
+    "CUDA", "System Design", "Prompt Engineering"
+  ]
+}
