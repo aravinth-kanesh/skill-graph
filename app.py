@@ -126,7 +126,7 @@ if input_method == "Text Input":
     sample_loaded = st.session_state.get("sample_loaded", False)
     with col_input:
         text_input = st.text_area(
-            "Paste your CV, LinkedIn profile, or resume:",
+            "Paste your CV or LinkedIn profile:",
             value=SAMPLE_CV if sample_loaded else "",
             height=200,
             placeholder="Include your skills, experiences, tools you've used, etc..."

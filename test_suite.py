@@ -320,7 +320,7 @@ class TestIntegration:
 
     def test_job_role_matching(self):
         """Test skill extraction and job matching."""
-        # Backend Developer resume
+        # Backend Developer CV
         cv_text = """
         Backend Developer
         - 3 years with Python and Flask

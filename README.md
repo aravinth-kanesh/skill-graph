@@ -9,7 +9,7 @@
 
 ## What it does
 
-SkillGraph takes a CV or resume as input, runs it through a three-strategy NLP pipeline to extract technical skills, then builds a weighted graph where nodes are skills and edges represent semantic or domain relationships. Given a target job role, it computes which skills you're missing and ranks them by proximity to skills you already have -- so you learn in the most efficient order.
+SkillGraph takes a CV as input, runs it through a three-strategy NLP pipeline to extract technical skills, then builds a weighted graph where nodes are skills and edges represent semantic or domain relationships. Given a target job role, it computes which skills you're missing and ranks them by proximity to skills you already have -- so you learn in the most efficient order.
 
 ---
 
@@ -122,7 +122,7 @@ Edit `config.yaml` to change the similarity threshold, transformer model, graph 
 
 ## Roadmap
 
-- PDF and DOCX resume parsing
+- PDF and DOCX CV parsing
 - Skill proficiency levels (Beginner / Intermediate / Expert) with weighted graph influence
 - GitHub Actions CI badge
 - Shareable results via URL params
