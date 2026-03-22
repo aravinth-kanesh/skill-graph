@@ -1,6 +1,8 @@
 import json
 import logging
 import time
+import pdfplumber
+import docx
 import streamlit as st
 from graph_builder import build_skill_graph, compute_graph_metrics, get_skill_recommendations
 from skill_extractor import extract_skills, get_skill_category
@@ -133,12 +135,24 @@ if input_method == "Text Input":
         )
 else:
     uploaded_file = st.file_uploader(
-        "Upload a text file (.txt)",
-        type=["txt"]
+        "Upload your CV (.pdf, .docx, or .txt)",
+        type=["pdf", "docx", "txt"]
     )
     if uploaded_file:
-        text_input = uploaded_file.read().decode("utf-8")
-        st.success(f"Loaded: {uploaded_file.name}")
+        try:
+            if uploaded_file.name.endswith(".pdf"):
+                with pdfplumber.open(uploaded_file) as pdf:
+                    text_input = "\n".join(
+                        page.extract_text() or "" for page in pdf.pages
+                    )
+            elif uploaded_file.name.endswith(".docx"):
+                doc = docx.Document(uploaded_file)
+                text_input = "\n".join(p.text for p in doc.paragraphs)
+            else:
+                text_input = uploaded_file.read().decode("utf-8")
+            st.success(f"Loaded: {uploaded_file.name} ({len(text_input):,} characters)")
+        except Exception as e:
+            st.error(f"Could not read file: {e}")
 
 # Job role selection
 st.header("Target Job Role")

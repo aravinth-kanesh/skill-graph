@@ -35,6 +35,7 @@ Visit `http://localhost:8501`. Use "Load sample CV" to try it without uploading 
 - **Job role matching**: Compare extracted skills against 18+ predefined roles; see matched and missing skills grouped by category
 - **Learning recommendations**: Missing skills ranked by shortest-path distance to your current skills in the graph
 - **Graph metrics**: Network density, average degree, PageRank-based centrality
+- **File upload**: Accepts PDF, DOCX, and plain text CVs
 - **Export**: Download results as JSON or CSV
 
 ---
@@ -122,7 +123,7 @@ Edit `config.yaml` to change the similarity threshold, transformer model, graph 
 
 ## Roadmap
 
-- PDF and DOCX CV parsing
+- ~~PDF and DOCX CV parsing~~ (done)
 - Skill proficiency levels (Beginner / Intermediate / Expert) with weighted graph influence
 - GitHub Actions CI badge
 - Shareable results via URL params
