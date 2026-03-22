@@ -24,7 +24,8 @@ SKILL_DATABASE = {
     ],
     "Data": [
         "Pandas", "NumPy", "Scikit-learn", "TensorFlow", "PyTorch",
-        "Machine Learning", "Data Analysis", "Statistics", "R", "SAS"
+        "Machine Learning", "Deep Learning", "NLP", "Computer Vision",
+        "Data Analysis", "Statistics", "R", "SAS"
     ],
     "DevOps": [
         "Docker", "Kubernetes", "AWS", "GCP", "Azure", "Jenkins",
@@ -35,8 +36,8 @@ SKILL_DATABASE = {
         "Elasticsearch", "DynamoDB"
     ],
     "Other": [
-        "REST APIs", "GraphQL", "Microservices", "SOLID", "Design Patterns",
-        "Agile", "System Design"
+        "REST APIs", "GraphQL", "Microservices", "SOLID", "OOP",
+        "Design Patterns", "Agile", "System Design"
     ]
 }
 
@@ -49,11 +50,8 @@ TECH_PATTERNS = {
     r"\bML\b": "Machine Learning",
     r"\bDL\b": "Deep Learning",
     r"\bNLP\b": "NLP",
-    r"\bCV\b": "Computer Vision",
-    r"\bGPU\b": "GPU",
     r"\bAPI\b": "REST APIs",
     r"\bRESTful\b": "REST APIs",
-    r"\bDB\b": "Databases",
     r"\bOOP\b": "OOP",
 }
 
@@ -107,11 +105,11 @@ def extract_skills(text: str) -> Tuple[List[str], List[Tuple[str, float]]]:
     except Exception as e:
         logger.error(f"Error in spaCy NER: {e}")
 
-    # Build confidence-scored list
+    # Build confidence-scored list, sorted by confidence descending
     results = [(skill, confidence_scores.get(skill, 0.75)) for skill in extracted]
     results.sort(key=lambda x: x[1], reverse=True)
 
-    return list(extracted), results
+    return [r[0] for r in results], results
 
 def get_skill_category(skill: str) -> str:
     """Return the category of a skill."""

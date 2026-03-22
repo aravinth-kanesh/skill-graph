@@ -146,8 +146,8 @@ def get_skill_recommendations(G: nx.Graph, skills: set, job_skills: set) -> List
 
     for missing_skill in missing:
         if missing_skill not in G.nodes():
-            # Add as isolated node temporarily
-            recommendations[missing_skill] = 1.0
+            # Skill has no graph connections, lowest priority
+            recommendations[missing_skill] = 0.0
             continue
 
         # Score based on proximity to existing skills

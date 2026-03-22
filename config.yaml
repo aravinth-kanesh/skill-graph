@@ -31,4 +31,3 @@ performance:
 # Job roles file
 data:
   job_roles_path: "job_roles.json"
-  skill_database_path: "skill_extractor.py"  # Embedded in code
